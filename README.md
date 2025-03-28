@@ -46,3 +46,12 @@ probabilities = np.round(np.abs(np.real(np.square(kets))),4)
 counts = {np.binary_repr(i, width=qc.num_qubits): probabilities[i] for i in range(np.power(2, qc.num_qubits))}
 plot_histogram(counts)
 ```
+
+Basic Simulator: This actually simulates the randomness of a quantum computer. 
+```
+qc.measure_all()
+backend = BasicSimulator()
+result = backend.run(qc, shots = 512).result()
+counts = result.get_counts()
+plot_histogram(counts)
+```
