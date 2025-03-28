@@ -1,6 +1,8 @@
 ## Hackathon Information
 Quackhacks 2025 is a quantum computing hackathon for beginners hosted by the NC State Quantum Computing Club. 
 
+HACKTHON PROMPT: Create a random number-generating circuit using Qiskit.
+
 ## Tutorial Notes
 These notes are from the presentation given at the start of the hackathon. 
 ### Classical Information 
