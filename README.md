@@ -14,4 +14,4 @@ These notes are from the presentation given at the start of the hackathon.
     * a = b = sqrt(1/2) (The probability of measuring that state is the coefficient squared)
     * A state is denoted by |State>
 ### Preparing These "Superposition" States using Quantum Computing
-![alt text](diagram1.png "Diagram 1")
+![alt text](diagram1.png "Diagram 1" width="300")
