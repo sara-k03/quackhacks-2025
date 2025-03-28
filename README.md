@@ -25,3 +25,24 @@ pip3 install qiskit_aer
 pip3 install pylatexenc
 pip3 install qiskit[visualization]
 ```
+
+Drawing a Quantum Circuit: 
+``` 
+qc = QuantumCircuit(2, 1)
+qc.draw('mp1')
+``` 
+
+Adding Gates:
+```
+qc = QuantumCircuit(3, 3)
+qc.x(0)
+# more code I forgot to add
+```
+
+Ideal Simulation: 
+```
+kets = Statevector(qc).data
+probabilities = np.round(np.abs(np.real(np.square(kets))),4)
+counts = {np.binary_repr(i, width=qc.num_qubits): probabilities[i] for i in range(np.power(2, qc.num_qubits))}
+plot_histogram(counts)
+```
