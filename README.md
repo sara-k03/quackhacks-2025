@@ -15,3 +15,13 @@ These notes are from the presentation given at the start of the hackathon.
     * A state is denoted by |State>
 ### Preparing These "Superposition" States using Quantum Computing
 [ Reference Diagram 1 for notes from here ]
+### Programming in Qiskit 
+Installing Qiskit: 
+```
+pip3 install qiskit
+pip3 install matplotlib
+pip3 install qiskit_ibm_runtime
+pip3 install qiskit_aer
+pip3 install pylatexenc
+pip3 install qiskit[visualization]
+```
